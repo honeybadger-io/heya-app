@@ -3,7 +3,9 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby "2.6.2"
 
-gem "standard"
+gem "standard", "~> 0.0.40"
+gem "heya", path: "../heya"
+gem "maildown", "~> 3.0.2"
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem "rails", "~> 5.2.3"

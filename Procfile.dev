@@ -1,2 +1,2 @@
 web: PORT=3000 bundle exec rails server
-sidekiq: PORT=3000 bundle exec sidekiq
+sidekiq: bundle exec sidekiq -q default -q mailers

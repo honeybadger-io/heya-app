@@ -66,5 +66,5 @@ gem "heya", path: "../heya"
 gem "maildown", "~> 3.0.2"
 gem "ahoy_matey", "~> 3.0"
 gem "pry-rails", "~> 0.3.9"
-
 gem "sidekiq", "~> 5.2"
+gem "mailkick", "~> 0.3.1"

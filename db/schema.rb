@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_06_14_230324) do
+ActiveRecord::Schema.define(version: 2019_07_02_235248) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -102,6 +102,19 @@ ActiveRecord::Schema.define(version: 2019_06_14_230324) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["campaign_id"], name: "index_heya_messages_on_campaign_id"
+  end
+
+  create_table "mailkick_opt_outs", force: :cascade do |t|
+    t.string "email"
+    t.string "user_type"
+    t.bigint "user_id"
+    t.boolean "active", default: true, null: false
+    t.string "reason"
+    t.string "list"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_mailkick_opt_outs_on_email"
+    t.index ["user_type", "user_id"], name: "index_mailkick_opt_outs_on_user_type_and_user_id"
   end
 
   add_foreign_key "heya_campaign_memberships", "heya_campaigns", column: "campaign_id"

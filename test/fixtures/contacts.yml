@@ -1,9 +1,11 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  email: MyString
-  traits: 
+  email: one@example.com
+  traits:
+    name: One
 
 two:
-  email: MyString
-  traits: 
+  email: two@example.com
+  traits:
+    name: Two

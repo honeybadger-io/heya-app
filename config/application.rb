@@ -18,5 +18,8 @@ module HeyaApp
 
     # Use Sidekiq as ActiveJob backend.
     config.active_job.queue_adapter = :sidekiq
+
+    # Default ActionMailer config (override in production environments).
+    config.action_mailer.default_url_options = {host: "heya.local"}
   end
 end

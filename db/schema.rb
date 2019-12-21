@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_02_235248) do
+ActiveRecord::Schema.define(version: 2019_12_21_062219) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -67,41 +67,24 @@ ActiveRecord::Schema.define(version: 2019_07_02_235248) do
   end
 
   create_table "heya_campaign_memberships", force: :cascade do |t|
-    t.bigint "campaign_id", null: false
-    t.string "contact_type", null: false
-    t.bigint "contact_id", null: false
+    t.string "user_type", null: false
+    t.bigint "user_id", null: false
+    t.string "campaign_gid", null: false
+    t.boolean "concurrent", default: false, null: false
     t.datetime "last_sent_at", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["campaign_id"], name: "index_heya_campaign_memberships_on_campaign_id"
-    t.index ["contact_id", "campaign_id"], name: "index_heya_campaign_memberships_on_contact_id_and_campaign_id", unique: true
-    t.index ["contact_type", "contact_id"], name: "index_heya_campaign_memberships_on_contact_type_and_contact_id"
+    t.index ["user_type", "user_id", "campaign_gid"], name: "user_campaign_idx", unique: true
   end
 
-  create_table "heya_campaigns", force: :cascade do |t|
-    t.string "name"
+  create_table "heya_campaign_receipts", force: :cascade do |t|
+    t.string "user_type", null: false
+    t.bigint "user_id", null: false
+    t.string "step_gid", null: false
+    t.datetime "sent_at"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-  end
-
-  create_table "heya_message_receipts", force: :cascade do |t|
-    t.bigint "message_id", null: false
-    t.string "contact_type", null: false
-    t.bigint "contact_id", null: false
-    t.datetime "sent_at", null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["contact_type", "contact_id"], name: "index_heya_message_receipts_on_contact_type_and_contact_id"
-    t.index ["message_id", "contact_id"], name: "index_heya_message_receipts_on_message_id_and_contact_id", unique: true
-    t.index ["message_id"], name: "index_heya_message_receipts_on_message_id"
-  end
-
-  create_table "heya_messages", force: :cascade do |t|
-    t.bigint "campaign_id"
-    t.string "name"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["campaign_id"], name: "index_heya_messages_on_campaign_id"
+    t.index ["user_type", "user_id", "step_gid"], name: "user_step_idx", unique: true
   end
 
   create_table "mailkick_opt_outs", force: :cascade do |t|
@@ -117,7 +100,4 @@ ActiveRecord::Schema.define(version: 2019_07_02_235248) do
     t.index ["user_type", "user_id"], name: "index_mailkick_opt_outs_on_user_type_and_user_id"
   end
 
-  add_foreign_key "heya_campaign_memberships", "heya_campaigns", column: "campaign_id"
-  add_foreign_key "heya_message_receipts", "heya_messages", column: "message_id"
-  add_foreign_key "heya_messages", "heya_campaigns", column: "campaign_id"
 end

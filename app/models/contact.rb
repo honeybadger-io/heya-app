@@ -1,5 +1,5 @@
 class Contact < ApplicationRecord
-  include Heya::Concerns::Models::Contact
+  include Heya::Concerns::Models::User
 
   mailkick_user
 

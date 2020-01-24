@@ -1,8 +1,8 @@
 class EvergreenCampaign < Heya::Campaigns::Base
   default wait: 2.weeks
 
-  step :one, wait: 0.minutes,
-             subject: "First email subject"
+  step :one,
+    subject: "First email subject"
 
   step :two,
     subject: "Second email subject"

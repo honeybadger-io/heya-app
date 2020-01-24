@@ -3,7 +3,12 @@ class User < ApplicationRecord
 
   mailkick_user
 
-  default_segment { not_opted_out }
+  default_segment {|u| !u.opted_out? }
+
+  after_create_commit do
+    OnboardingCampaign.add(self)
+    EvergreenCampaign.add(self)
+  end
 
   store_accessor :traits, :name
 

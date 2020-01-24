@@ -1,0 +1,5 @@
+<%= form_for @user, url: user_path(@user) do |f| %>
+  <%= f.text_field :name, placeholder: "Name" %>
+  <%= f.email_field :email, placeholder: "Email", required: true %>
+  <%= f.submit %>
+<% end %>

@@ -3,14 +3,11 @@ class User < ApplicationRecord
 
   mailkick_user
 
-  default_segment {|u| !u.opted_out? }
-
-  after_create_commit do
-    OnboardingCampaign.add(self)
-    EvergreenCampaign.add(self)
-  end
+  default_segment { |u| !u.opted_out? }
 
   store_accessor :traits, :name
+
+  validates :email, presence: true, format: /@/
 
   def first_name
     name.to_s.split(/\s+/).first.presence

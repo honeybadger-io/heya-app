@@ -1,4 +1,4 @@
-class Contact < ApplicationRecord
+class User < ApplicationRecord
   include Heya::Concerns::Models::User
 
   mailkick_user

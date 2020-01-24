@@ -57,15 +57,6 @@ ActiveRecord::Schema.define(version: 2019_12_21_062219) do
     t.index ["visit_token"], name: "index_ahoy_visits_on_visit_token", unique: true
   end
 
-  create_table "contacts", force: :cascade do |t|
-    t.string "email", null: false
-    t.jsonb "traits", default: {}, null: false
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_contacts_on_email"
-    t.index ["traits"], name: "index_contacts_on_traits"
-  end
-
   create_table "heya_campaign_memberships", force: :cascade do |t|
     t.string "user_type", null: false
     t.bigint "user_id", null: false
@@ -98,6 +89,15 @@ ActiveRecord::Schema.define(version: 2019_12_21_062219) do
     t.datetime "updated_at", null: false
     t.index ["email"], name: "index_mailkick_opt_outs_on_email"
     t.index ["user_type", "user_id"], name: "index_mailkick_opt_outs_on_user_type_and_user_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email", null: false
+    t.jsonb "traits", default: {}, null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["email"], name: "index_users_on_email"
+    t.index ["traits"], name: "index_users_on_traits"
   end
 
 end

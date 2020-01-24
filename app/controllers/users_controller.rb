@@ -7,7 +7,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
-      OnboardingCampaign.add(@user)
+      DemoCampaign.add(@user, restart: true)
       EvergreenCampaign.add(@user)
 
       redirect_to :thanks

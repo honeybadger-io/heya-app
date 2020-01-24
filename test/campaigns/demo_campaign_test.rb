@@ -1,10 +1,10 @@
 require "test_helper"
 
 module Heya
-  class OnboardingCampaignTest < ActionMailer::TestCase
+  class DemoCampaignTest < ActionMailer::TestCase
     test "first" do
       user = users(:one)
-      email = OnboardingCampaign.first(user)
+      email = DemoCampaign.first(user)
 
       assert_emails 1 do
         email.deliver_now

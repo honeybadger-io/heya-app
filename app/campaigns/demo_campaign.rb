@@ -1,6 +1,8 @@
-class OnboardingCampaign < Heya::Campaigns::Base
+class DemoCampaign < Heya::Campaigns::Base
+  default wait: 2.minutes
+
   step :first, wait: 0.minutes,
-    subject: "First Message"
+               subject: "First Message"
 
   step :second,
     subject: "Second Message"

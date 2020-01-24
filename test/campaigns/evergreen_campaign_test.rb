@@ -1,10 +1,10 @@
 require "test_helper"
 
 module Heya
-  class ShadowNewsletterCampaignTest < ActionMailer::TestCase
+  class EvergreenCampaignTest < ActionMailer::TestCase
     test "build" do
       user = users(:one)
-      email = ShadowNewsletterCampaign.one(user)
+      email = EvergreenCampaign.one(user)
 
       assert_emails 1 do
         email.deliver_now

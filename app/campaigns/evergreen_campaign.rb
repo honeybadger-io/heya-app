@@ -1,4 +1,4 @@
-class ShadowNewsletterCampaign < Heya::Campaigns::Base
+class EvergreenCampaign < Heya::Campaigns::Base
   default wait: 2.weeks
 
   step :one, wait: 0.minutes,

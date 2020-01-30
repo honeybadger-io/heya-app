@@ -10,7 +10,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end
@@ -23,7 +23,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end
@@ -36,7 +36,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end
@@ -49,7 +49,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end
@@ -62,7 +62,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end
@@ -75,7 +75,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end
@@ -88,7 +88,7 @@ module Heya
         email.deliver_now
       end
 
-      assert_equal ["support@honeybadger.io"], email.from
+      assert_equal ["support@heya.email"], email.from
       assert_equal ["one@example.com"], email.to
       assert_ican email
     end

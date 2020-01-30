@@ -7,4 +7,10 @@ class ActiveSupport::TestCase
   fixtures :all
 
   # Add more helper methods to be used by all tests here...
+  def assert_ican(email)
+    assert_match(/Unsubscribe/, email.html_part.body.to_s)
+    assert_match(/Unsubscribe/, email.text_part.body.to_s)
+    assert_match(/11410 Northeast 124th Street #246, Kirkland WA 98034/, email.html_part.body.to_s)
+    assert_match(/11410 Northeast 124th Street #246, Kirkland WA 98034/, email.text_part.body.to_s)
+  end
 end

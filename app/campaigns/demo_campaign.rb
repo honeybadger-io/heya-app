@@ -1,5 +1,5 @@
 class DemoCampaign < Heya::Campaigns::Base
-  default wait: 2.minutes
+  default wait: 1.minute
 
   step :intro, wait: 0.minutes,
                subject: "Here's your Heya demo"

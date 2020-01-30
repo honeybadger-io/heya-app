@@ -10,8 +10,6 @@ class UsersController < ApplicationController
 
     if @user.save
       DemoCampaign.add(@user, restart: true)
-      EvergreenCampaign.add(@user)
-
       redirect_to :thanks
     else
       render :new

@@ -1,5 +1,6 @@
-PATH
-  remote: ../heya
+GIT
+  remote: https://github.com/honeybadger-io/heya.git
+  revision: ffbce5c7efcdcd54a290c667fc1d0ba6b8c220d0
   specs:
     heya (0.0.1)
       rails (~> 5.2.3)

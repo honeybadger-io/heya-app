@@ -62,7 +62,7 @@ end
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem "standard", "~> 0.0.40"
-gem "heya", path: "../heya"
+gem "heya", github: "honeybadger-io/heya"
 gem "maildown", "~> 3.0.2"
 gem "ahoy_matey", "~> 3.0"
 gem "pry-rails", "~> 0.3.9"

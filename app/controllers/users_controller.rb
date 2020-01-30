@@ -4,7 +4,9 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.new(user_params)
+    @user = User.where(email: user_params["email"]).first_or_initialize { |user|
+      user.name = user_params["name"]
+    }
 
     if @user.save
       DemoCampaign.add(@user, restart: true)
@@ -19,6 +21,6 @@ class UsersController < ApplicationController
   protected
 
   def user_params
-    params.require(:user).permit(:email, :name)
+    @user_params ||= params.require(:user).permit(:email, :name)
   end
 end

@@ -96,7 +96,7 @@ ActiveRecord::Schema.define(version: 2019_12_21_062219) do
     t.jsonb "traits", default: {}, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.index ["email"], name: "index_users_on_email"
+    t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["traits"], name: "index_users_on_traits"
   end
 

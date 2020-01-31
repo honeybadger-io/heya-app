@@ -1,5 +1,13 @@
 Hi <%= @user.first_name.presence || "there" %>,
 
-In the next email, I'll give you everything else you should know about Heya.
+Heya is just a Ruby gem. Once installed in your Rails app, you can send email campaigns to your users in a way that is very similar to how you already deliver one-off emails with ActionMailer.
+
+To send an email with Intercom, you would need to install the intercom-rails gem, define custom user properties to send, and then sync all of your users. When you need some *new* properties in Intercom, you get to do this all over again. Oh yeah, and you'll maintain the integration... forever.
+
+**The best part about Heya is how easy it is to automate.**
+
+Sending a campaign in systems like Intercom involves setting up complicated rules based on changing user properties and custom events. Sending a campaign in Heya is done right from your Rails app, using the logic you've already built (and tested) on your `User` model.
+
+In the next email, I’ll show you a few other cool things that you can do with Heya that you can't with Intercom and friends.
 
 -Josh

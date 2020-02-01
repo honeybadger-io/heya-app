@@ -15,10 +15,10 @@ class DemoCampaign < Heya::Campaigns::Base
     subject: "Is Heya right for you?"
 
   step :how_it_works,
-    subject: "How does Heya work?"
+    subject: "Heya may be cheaper, but is it really better?"
 
   step :everything_else,
-    subject: "Everything else you should know about Heya"
+    subject: "Heya keeps your priorities in order"
 
   step :outro,
     subject: "This is it for now..."

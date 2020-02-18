@@ -3,8 +3,6 @@ class User < ApplicationRecord
 
   mailkick_user
 
-  default_segment { |u| !u.opted_out? }
-
   store_accessor :traits, :name
 
   validates :email, presence: true, format: /@/, uniqueness: true

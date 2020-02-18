@@ -1,9 +1,9 @@
 GIT
   remote: https://github.com/honeybadger-io/heya.git
-  revision: 0916150331f7dfd6a52065223bca9a10436087cb
+  revision: edc0918148f895f2d65b7adca155a95e80f43514
   specs:
     heya (0.0.1)
-      rails (~> 5.2.3)
+      rails (>= 5.2.3, < 6.1.0)
 
 GEM
   remote: https://rubygems.org/
@@ -86,7 +86,7 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.12.2)
-    concurrent-ruby (1.1.5)
+    concurrent-ruby (1.1.6)
     connection_pool (2.2.2)
     crass (1.0.6)
     device_detector (1.0.1)
@@ -128,7 +128,7 @@ GEM
     minitest (5.14.0)
     msgpack (1.2.10)
     nio4r (2.5.2)
-    nokogiri (1.10.7)
+    nokogiri (1.10.8)
       mini_portile2 (~> 2.4.0)
     parallel (1.17.0)
     parser (2.6.3.0)
@@ -142,7 +142,7 @@ GEM
     psych (3.1.0)
     public_suffix (3.1.0)
     puma (3.12.1)
-    rack (2.1.2)
+    rack (2.2.2)
     rack-protection (2.0.5)
       rack
     rack-test (1.1.0)

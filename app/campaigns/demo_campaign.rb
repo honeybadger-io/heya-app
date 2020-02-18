@@ -1,7 +1,4 @@
-class DemoCampaign < Heya::Campaigns::Base
-  default from: "Josh from Honeybadger <support@heya.email>",
-          wait: 10.minutes
-
+class DemoCampaign < ApplicationCampaign
   step :intro, wait: 0.minutes,
                subject: "Here's your Heya demo"
 

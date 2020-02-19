@@ -1,4 +1,6 @@
 class DemoCampaign < ApplicationCampaign
+  default wait: 5.minutes
+
   step :intro, wait: 0.minutes,
                subject: "Here's your Heya demo"
 

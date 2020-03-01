@@ -141,7 +141,7 @@ GEM
       pry (>= 0.10.4)
     psych (3.1.0)
     public_suffix (3.1.0)
-    puma (3.12.1)
+    puma (3.12.4)
     rack (2.2.2)
     rack-protection (2.0.5)
       rack
@@ -264,7 +264,7 @@ DEPENDENCIES
   mailkick (~> 0.3.1)
   pg (>= 0.18, < 2.0)
   pry-rails (~> 0.3.9)
-  puma (~> 3.11)
+  puma (~> 3.12)
   rails (~> 5.2.3)
   sass-rails (~> 5.0)
   selenium-webdriver

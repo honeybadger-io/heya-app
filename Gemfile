@@ -69,3 +69,5 @@ gem "pry-rails", "~> 0.3.9"
 gem "sidekiq", "~> 6.0"
 gem "mailkick", "~> 0.4.1"
 gem "honeybadger", "~> 4.5"
+
+gem "webpacker", "~> 4.2"

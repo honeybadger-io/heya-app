@@ -1,6 +1,4 @@
 class User < ApplicationRecord
-  include Heya::Concerns::Models::User
-
   mailkick_user
 
   store_accessor :traits, :name

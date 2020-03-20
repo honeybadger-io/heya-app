@@ -61,3 +61,8 @@ jobs:
       run: |
         source $HOME/.rvm/scripts/rvm
         bundle exec rake db:create db:schema:load test
+
+    - name: Run linter
+      run: |
+        source $HOME/.rvm/scripts/rvm
+        bundle exec rake standard

@@ -113,7 +113,7 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    maildown (3.0.3)
+    maildown (3.1.0)
       actionmailer (>= 4.0.0)
       kramdown
     mailkick (0.3.1)
@@ -258,7 +258,7 @@ DEPENDENCIES
   honeybadger (~> 4.5)
   jbuilder (~> 2.5)
   listen (>= 3.0.5, < 3.2)
-  maildown (~> 3.0.2)
+  maildown (~> 3.1.0)
   mailkick (~> 0.3.1)
   pg (>= 0.18, < 2.0)
   pry-rails (~> 0.3.9)

@@ -1,16 +1,26 @@
-<h1>Heya, Rails Developer 👋</h1>
+<header>
+  <h1>Heya, Rails Developer 👋</h1>
+  <p>
+    Have you ever set up a complicated marketing integration just to send some emails? Would you like to skip that next time?
+    <br>
+    If so, then we have just the thing for you.
+  </p>
+</header>
 
-<p>Have you ever set up a complicated marketing integration just to send some emails? Would you like to skip that next time? If so, then we have just the thing for you.</p>
-
-<h2>Introducing Heya: Automated email campaigns for Ruby on Rails</h2>
-<p>It's as robust as the hosted alternatives, without the integration and compliance nightmare. Generate and send automated email campaigns with just a few <code>rails</code> commands.</p>
-
-<h3>Not this Heya:</h3>
-<p><img src="https://media.giphy.com/media/XUhRGXhFLLzqg/giphy.gif" width="350"></p>
-<p><small>(although feel free to mistakenly associate us with Outkast, alright?)</small></p>
-
-<h3>This Heya:</h3>
-<pre>
+<main>
+  <section>
+    <header>
+      <h2>Introducing Heya: Automated email campaigns for Ruby on Rails</h2>
+      <p>It's as robust as the hosted alternatives, without the integration and compliance nightmare. Generate and send automated email campaigns with just a few <code>rails</code> commands.</p>
+    </header>
+    <aside>
+      <h3>Not this Heya:</h3>
+      <p style="text-align:center"><img src="https://media.giphy.com/media/XUhRGXhFLLzqg/giphy.gif" width="350"></p>
+      <p><small>(although feel free to mistakenly associate us with Outkast, alright?)</small></p>
+    </aside>
+    <aside>
+      <h3>This Heya:</h3>
+      <pre>
 # app/campaigns/onboarding_campaign.rb
 class OnboardingCampaign < Heya::Campaigns::Base
   step :welcome,
@@ -23,16 +33,23 @@ class OnboardingCampaign < Heya::Campaigns::Base
     subject: "omg, your trial is ending 🙀"
   end
 end
-</pre>
+      </pre>
+    </aside>
+  </section>
+  <hr>
+  <article>
+    <h3>Here we go</h3>
+    <p>Get <a href="https://github.com/honeybadger-io/heya-app/blob/master/app/campaigns/demo_campaign.rb">this open source Heya demo</a> delivered fresh to your inbox:</p>
+    <%= form_for @user, url: user_path(@user) do |f| %>
+      <%= f.text_field :name, placeholder: "Name" %>
+      <%= f.email_field :email, placeholder: "Email", required: true %>
+      <%= f.submit "Shake it like a Polaroid picture" %>
+      <div><small>We'll never share your email address; unsubscribe any time.</small></div>
+    <% end %>
+  </article>
+</main>
 
-<h3>Here we go</h3>
-<p>Get <a href="https://github.com/honeybadger-io/heya-app/blob/master/app/campaigns/demo_campaign.rb">this open source Heya demo</a> delivered fresh to your inbox:</p>
-<%= form_for @user, url: user_path(@user) do |f| %>
-  <%= f.text_field :name, placeholder: "Name" %>
-  <%= f.email_field :email, placeholder: "Email", required: true %>
-  <%= f.submit "Shake it like a Polaroid picture" %>
-  <div><small>We'll never share your email address; unsubscribe any time.</small></div>
-<% end %>
-
-<h3>Who are you really, btw?</h3>
-<p>We're <a href="https://www.honeybadger.io">Honeybadger</a>&mdash;the ice cold error tracker for Rails. You may also know us from our podcast, <a href="https://www.founderquestpodcast.com">FounderQuest</a>. Like all our projects, we made Heya to make life easier for developers.</p>
+<footer>
+  <h3>Who are you really, btw?</h3>
+  <p>We're <a href="https://www.honeybadger.io">Honeybadger</a>&mdash;the ice cold error tracker for Rails. You may also know us from our podcast, <a href="https://www.founderquestpodcast.com">FounderQuest</a>. Like all our projects, we made Heya to make life easier for developers.</p>
+</footer>

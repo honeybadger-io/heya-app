@@ -4,12 +4,13 @@ class UsersController < ApplicationController
   end
 
   def create
-    @user = User.where(email: user_params["email"]).first_or_initialize { |user|
-      user.name = user_params["name"]
-    }
+    @user = User.where(email: user_params["email"]).first_or_initialize
+    @user.name = user_params["name"]
+    @user.confirmed_at = nil
 
     if @user.save
-      DemoCampaign.add(@user, restart: true)
+      DemoCampaign.remove(@user)
+      ConfirmationMailer.build(@user).deliver_later
       redirect_to :thanks
     else
       render :new

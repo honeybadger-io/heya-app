@@ -1,5 +1,11 @@
+# frozen_string_literal: true
+
 Rails.application.routes.draw do
-  resource :user, only: [:new, :create]
+  resources :users, only: [:new, :create] do
+    resource :confirmation, only: [] do
+      get :create
+    end
+  end
 
   get "thanks", to: "users#thanks"
 

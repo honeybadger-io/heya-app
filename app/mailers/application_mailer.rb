@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: "from@example.com"
-  layout "mailer"
+  default from: "Josh from Honeybadger <support@heya.email>"
+  layout "heya/campaign_mailer"
 end

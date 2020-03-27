@@ -1,4 +1,6 @@
 class User < ApplicationRecord
+  include Hashid::Rails
+
   mailkick_user
 
   store_accessor :traits, :name

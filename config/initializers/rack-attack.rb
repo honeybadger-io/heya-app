@@ -1,5 +1,5 @@
 class Rack::Attack
-  Rack::Attack.cache.store = ActiveSupport::Cache::RedisCacheStore.new(url: ENV["REDIS_URL"], expires_in: 3.days)
+  Rack::Attack.cache.store = ActiveSupport::Cache::RedisCacheStore.new(url: ENV[ENV["REDIS_PROVIDER"]] || ENV["REDIS_URL"], expires_in: 3.days)
 
   [[3, 1.minute], [5, 1.hour], [10, 1.day]].each do |limit, period|
     # Limit access to sign up

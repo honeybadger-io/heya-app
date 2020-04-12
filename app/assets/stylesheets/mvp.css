@@ -218,7 +218,7 @@ p {
 pre {
   margin: 1rem 0;
   max-width: var(--width-card-wide);
-  white-space: pre-line;
+  white-space: pre;
 }
 
 pre code,

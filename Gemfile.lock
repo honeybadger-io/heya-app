@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/honeybadger-io/heya.git
-  revision: 362514a193233778fad16ecbcd688b0f63ce427a
+  revision: 47354a2ffb31d5a03e0857597eae62e9a101d6a4
   specs:
     heya (0.1.0)
       rails (>= 5.2.3, < 6.1.0)
@@ -118,7 +118,7 @@ GEM
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
-    loofah (2.4.0)
+    loofah (2.5.0)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -244,7 +244,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.6)
+    tzinfo (1.2.7)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)

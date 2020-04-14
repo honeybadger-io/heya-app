@@ -69,12 +69,12 @@ Rails.application.configure do
   config.action_mailer.default_url_options = {host: "heya.email"}
   config.action_mailer.delivery_method = :smtp
   config.action_mailer.smtp_settings = {
-    user_name: ENV["SENDGRID_USERNAME"],
-    password: ENV["SENDGRID_PASSWORD"],
-    domain: "heya.email",
-    address: "smtp.sendgrid.net",
+    user_name: ENV["SES_USERNAME"],
+    password: ENV["SES_PASSWORD"],
+    domain: "honeybadger.io",
+    address: "email-smtp.us-east-1.amazonaws.com",
     port: 587,
-    authentication: :plain,
+    authentication: :login,
     enable_starttls_auto: true
   }
 

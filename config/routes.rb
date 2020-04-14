@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   end
 
   get "thanks", to: "users#thanks"
+  get "success", to: "users#new", success: true
 
   root to: "users#new"
 end

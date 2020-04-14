@@ -36,6 +36,20 @@ jobs:
       run: |
         sudo apt-get -yqq install libpq-dev postgresql-client
 
+    - name: Cache node modules
+      uses: actions/cache@v1
+      with:
+        path: node_modules
+        key: yarn-${{ hashFiles('yarn.lock') }}
+        restore-keys: |
+          yarn-${{ env.cache-name }}-
+          yarn-
+
+    - name: Install node modules
+      env:
+        RAILS_ENV: test
+      run: yarn install
+
     - name: Cache gems
       uses: actions/cache@v1
       with:

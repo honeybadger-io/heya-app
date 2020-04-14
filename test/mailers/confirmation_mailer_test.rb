@@ -9,7 +9,8 @@ class ConfirmationMailerTest < ActionMailer::TestCase
       email.deliver_now
     end
 
-    assert_equal ["support@heya.email"], email.from
+    assert_equal ["josh@honeybadger.io"], email.from
+    assert_equal ["heya@honeybadger.io"], email.reply_to
     assert_equal [user.email], email.to
     assert_equal "Please confirm your email address", email.subject
     assert_match user.hashid, email.html_part.to_s

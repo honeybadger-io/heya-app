@@ -60,7 +60,7 @@ end</code></pre>
     <header>
       <h2>Here we go 👇</h2>
       <p>Get <a href="https://github.com/honeybadger-io/heya-app/blob/master/app/campaigns/demo_campaign.rb">this open source Heya demo</a> delivered fresh to your inbox:</p>
-      <%= form_for @user do |f| %>
+      <%= form_for @user, html: {onsubmit: "fathom('trackGoal', 'XRRBFQA4', 0);"} do |f| %>
         <%= f.text_field :name, placeholder: "Name" %>
         <%= f.email_field :email, placeholder: "Email", required: true %>
         <%= f.submit "Shake it like a Polaroid picture" %>

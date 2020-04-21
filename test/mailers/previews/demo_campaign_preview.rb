@@ -1,4 +1,4 @@
-# Preview all emails at http://localhost:3000/rails/mailers/digest_mailer
+# Preview all emails at http://localhost:3000/rails/mailers/
 class DemoCampaignPreview < ActionMailer::Preview
   def intro
     DemoCampaign.intro(user)

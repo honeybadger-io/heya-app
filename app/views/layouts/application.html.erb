@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Heya: The Sequence Mailer for Rails</title>
+    <title>Heya: The Campaign Mailer for Rails</title>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -9,6 +9,18 @@
     <script src="https://kit.fontawesome.com/a02ce9628b.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@honeybadgerapp">
+    <meta name="twitter:creator" content="@heyjoshwood">
+    <meta name="twitter:title" content="Heya 👋">
+    <meta name="twitter:description" content="Heya is a campaign mailer for Rails. Think of it like ActionMailer, but for timed email sequences.">
+    <meta name="twitter:image:src" content="https://www.heya.email/heya.gif">
+
+    <meta property="og:site_name" content="Heya 👋" />
+    <meta property="og:title" content="Heya 👋" />
+    <meta property="og:description" content="Heya is a campaign mailer for Rails. Think of it like ActionMailer, but for timed email sequences." />
+    <meta property="og:image" content="https://www.heya.email/heya.gif" />
   </head>
 
   <body>

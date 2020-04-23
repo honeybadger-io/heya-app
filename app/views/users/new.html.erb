@@ -37,16 +37,16 @@
         <pre><code># app/campaigns/onboarding_campaign.rb
 class OnboardingCampaign < Heya::Campaigns::Base
   default wait: 2.days,
-    from: "josh@honeybadger.io"
+    from: "you@example.com"
 
   step :welcome,
-    subject: "Heya is so cool"
+    subject: "Welcome to our awesome app!"
 
   step :set_up,
-    subject: "Here's how it works"
+    subject: "Let's set up your account"
 
   step :convert,
-    subject: "omg, you should buy it 🙀"
+    subject: "omg, your trial is ending 🙀"
 end</code></pre>
       </center>
     </aside>

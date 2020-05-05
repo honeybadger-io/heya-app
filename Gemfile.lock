@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/honeybadger-io/heya.git
-  revision: fddff2ec87cde6c58cc5a892fa17c9e290d162c3
+  revision: 1125d8e407ebe107fa93d6700d7014505e67d2e9
   specs:
-    heya (0.2.0)
+    heya (0.2.1)
       rails (>= 5.2.3, < 6.1.0)
 
 GEM
@@ -131,7 +131,7 @@ GEM
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
     method_source (1.0.0)
-    mimemagic (0.3.4)
+    mimemagic (0.3.5)
     mini_mime (1.0.2)
     mini_portile2 (2.4.0)
     minitest (5.14.0)

@@ -1,8 +1,8 @@
 GIT
   remote: https://github.com/honeybadger-io/heya.git
-  revision: ca134449fdc9d6335d984a774555e7f167b439c8
+  revision: 6cd96f211c82390056b3f3ff3696496e42284570
   specs:
-    heya (0.2.1)
+    heya (0.3.0)
       rails (>= 5.2.3, < 6.1.0)
 
 GEM
@@ -227,7 +227,7 @@ GEM
     spring-watcher-listen (2.0.1)
       listen (>= 2.7, < 4.0)
       spring (>= 1.2, < 3.0)
-    sprockets (4.0.0)
+    sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
     sprockets-rails (3.2.1)
@@ -262,9 +262,9 @@ GEM
       rack-proxy (>= 0.6.1)
       railties (>= 5.2)
       semantic_range (>= 2.3.0)
-    websocket-driver (0.7.1)
+    websocket-driver (0.7.2)
       websocket-extensions (>= 0.1.0)
-    websocket-extensions (0.1.4)
+    websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
     zeitwerk (2.3.0)

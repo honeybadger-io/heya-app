@@ -105,7 +105,10 @@ GEM
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
       activesupport (>= 5.0.0)
-    kramdown (2.1.0)
+    kramdown (2.2.1)
+      rexml
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
     listen (3.2.1)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
@@ -114,9 +117,9 @@ GEM
       nokogiri (>= 1.5.9)
     mail (2.7.1)
       mini_mime (>= 0.1.1)
-    maildown (3.1.0)
+    maildown (3.2.0)
       actionmailer (>= 4.0.0)
-      kramdown
+      kramdown-parser-gfm
     mailkick (0.4.2)
       activesupport (>= 5)
     marcel (0.3.3)
@@ -276,7 +279,7 @@ DEPENDENCIES
   honeybadger (~> 4.5)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.3)
-  maildown (~> 3.1.0)
+  maildown (~> 3.2.0)
   mailkick (~> 0.4.1)
   pg (>= 0.18, < 2.0)
   pry-rails (~> 0.3.9)

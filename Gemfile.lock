@@ -65,11 +65,6 @@ GEM
       zeitwerk (~> 2.2, >= 2.2.2)
     addressable (2.7.0)
       public_suffix (>= 2.0.2, < 5.0)
-    ahoy_matey (3.0.4)
-      activesupport (>= 5)
-      device_detector
-      geocoder (>= 1.4.5)
-      safely_block (>= 0.2.1)
     ast (2.4.0)
     bindex (0.8.1)
     bootsnap (1.4.6)
@@ -96,12 +91,9 @@ GEM
     concurrent-ruby (1.1.6)
     connection_pool (2.2.2)
     crass (1.0.6)
-    device_detector (1.0.3)
-    errbase (0.2.0)
     erubi (1.9.0)
     execjs (2.7.0)
     ffi (1.12.2)
-    geocoder (1.6.3)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
     hashid-rails (1.4.0)
@@ -202,8 +194,6 @@ GEM
       rubocop (>= 0.71.0)
     ruby-progressbar (1.10.1)
     rubyzip (2.3.0)
-    safely_block (0.3.0)
-      errbase (>= 0.1.1)
     sass-rails (6.0.0)
       sassc-rails (~> 2.1, >= 2.1.1)
     sassc (2.3.0)
@@ -273,7 +263,6 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  ahoy_matey (~> 3.0)
   bootsnap (>= 1.4.2)
   byebug
   capybara (>= 2.15)

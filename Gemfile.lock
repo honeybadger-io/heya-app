@@ -100,7 +100,7 @@ GEM
       activerecord (>= 4.0)
       hashids (~> 1.0)
     hashids (1.0.5)
-    honeybadger (4.6.0)
+    honeybadger (4.7.0)
     i18n (1.8.3)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)
@@ -273,7 +273,7 @@ DEPENDENCIES
   coffee-rails (~> 5.0)
   hashid-rails (~> 1.4)
   heya!
-  honeybadger (~> 4.5)
+  honeybadger (~> 4.7)
   jbuilder (~> 2.7)
   listen (>= 3.0.5, < 3.3)
   maildown (~> 3.1.0)

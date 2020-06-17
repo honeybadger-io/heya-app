@@ -6,7 +6,6 @@
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",
     "@rails/webpacker": "4.2.2",
-    "ahoy.js": "^0.3.4",
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {

@@ -100,7 +100,7 @@ GEM
       activerecord (>= 4.0)
       hashids (~> 1.0)
     hashids (1.0.5)
-    honeybadger (4.7.1)
+    honeybadger (4.7.2)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
     jbuilder (2.10.0)

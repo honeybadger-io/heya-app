@@ -103,7 +103,7 @@ GEM
     honeybadger (4.7.2)
     i18n (1.8.5)
       concurrent-ruby (~> 1.0)
-    jbuilder (2.10.0)
+    jbuilder (2.10.1)
       activesupport (>= 5.0.0)
     kramdown (2.3.0)
       rexml
@@ -274,7 +274,7 @@ DEPENDENCIES
   hashid-rails (~> 1.4)
   heya!
   honeybadger (~> 4.7)
-  jbuilder (~> 2.7)
+  jbuilder (~> 2.10)
   listen (>= 3.0.5, < 3.3)
   maildown (~> 3.2.0)
   mailkick (~> 0.4.1)

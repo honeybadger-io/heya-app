@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/honeybadger-io/heya.git
-  revision: 5a4a3b5f8004a5c9eb82ecee3113280589876b4a
+  revision: c3b0926ff42477f62337448c3deaf745c3c3c847
   specs:
     heya (0.3.0)
       rails (>= 5.2.3, < 6.1.0)
@@ -130,7 +130,7 @@ GEM
     mini_portile2 (2.4.0)
     minitest (5.14.2)
     msgpack (1.3.3)
-    nio4r (2.5.3)
+    nio4r (2.5.4)
     nokogiri (1.10.10)
       mini_portile2 (~> 2.4.0)
     parallel (1.19.2)
@@ -224,7 +224,7 @@ GEM
     sprockets (4.0.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
-    sprockets-rails (3.2.1)
+    sprockets-rails (3.2.2)
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)

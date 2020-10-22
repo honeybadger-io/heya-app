@@ -1,6 +1,6 @@
 GIT
   remote: https://github.com/honeybadger-io/heya.git
-  revision: 1fff32b33cc256f0659215b4b11ff998040f4326
+  revision: 39d50ee280b17825e992f6f86398e2e5e5e60c6c
   specs:
     heya (0.3.0)
       rails (>= 5.2.3, < 6.1.0)

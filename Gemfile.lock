@@ -120,7 +120,7 @@ GEM
     maildown (3.2.0)
       actionmailer (>= 4.0.0)
       kramdown-parser-gfm
-    mailkick (0.4.2)
+    mailkick (0.4.3)
       activesupport (>= 5)
     marcel (0.3.3)
       mimemagic (~> 0.3.2)
@@ -237,7 +237,7 @@ GEM
     turbolinks (5.2.1)
       turbolinks-source (~> 5.2)
     turbolinks-source (5.2.0)
-    tzinfo (1.2.7)
+    tzinfo (1.2.9)
       thread_safe (~> 0.1)
     uglifier (4.2.0)
       execjs (>= 0.3.0, < 3)
@@ -261,7 +261,7 @@ GEM
     websocket-extensions (0.1.5)
     xpath (3.2.0)
       nokogiri (~> 1.8)
-    zeitwerk (2.4.1)
+    zeitwerk (2.4.2)
 
 PLATFORMS
   ruby
@@ -277,7 +277,7 @@ DEPENDENCIES
   jbuilder (~> 2.10)
   listen (>= 3.0.5, < 3.5)
   maildown (~> 3.2.0)
-  mailkick (~> 0.4.1)
+  mailkick (~> 0.4.3)
   pg (>= 0.18, < 2.0)
   pry-rails (~> 0.3.9)
   puma (~> 5.1)

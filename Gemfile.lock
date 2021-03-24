@@ -113,7 +113,7 @@ GEM
       rexml
     kramdown-parser-gfm (1.1.0)
       kramdown (~> 2.0)
-    listen (3.4.1)
+    listen (3.5.0)
       rb-fsevent (~> 0.10, >= 0.10.3)
       rb-inotify (~> 0.9, >= 0.9.10)
     loofah (2.9.0)
@@ -280,7 +280,7 @@ DEPENDENCIES
   heya!
   honeybadger (~> 4.7)
   jbuilder (~> 2.10)
-  listen (>= 3.0.5, < 3.5)
+  listen (>= 3.0.5, <= 3.5.0)
   maildown (~> 3.3.0)
   mailkick (~> 0.4.1)
   pg (>= 0.18, < 2.0)

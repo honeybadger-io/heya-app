@@ -57,7 +57,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem "standard", "~> 0.4.7"
+gem "standard", "~> 1.11.0"
 gem "heya", github: "honeybadger-io/heya"
 gem "maildown", "~> 3.3.0"
 gem "pry-rails", "~> 0.3.9"

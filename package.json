@@ -9,7 +9,7 @@
     "turbolinks": "^5.2.0"
   },
   "devDependencies": {
-    "webpack-dev-server": "^4.9.2"
+    "webpack-dev-server": "^4.9.3"
   },
   "version": "0.1.0"
 }

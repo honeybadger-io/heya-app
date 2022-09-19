@@ -2,9 +2,9 @@
   "name": "heya-app",
   "private": true,
   "dependencies": {
-    "@rails/actioncable": "^7.0.3",
-    "@rails/activestorage": "^7.0.3",
-    "@rails/ujs": "^7.0.3",
+    "@rails/actioncable": "^7.0.4",
+    "@rails/activestorage": "^7.0.4",
+    "@rails/ujs": "^7.0.4",
     "@rails/webpacker": "5.4.3",
     "turbolinks": "^5.2.0"
   },

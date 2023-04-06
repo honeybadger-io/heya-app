@@ -74,7 +74,7 @@ jobs:
         RAILS_ENV: test
       run: |
         source $HOME/.rvm/scripts/rvm
-        bundle exec rake db:create db:schema:load test
+        bundle exec rake db:create db:schema:load assets:precompile test
 
     - name: Run linter
       run: |
